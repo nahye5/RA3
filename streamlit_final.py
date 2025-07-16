@@ -29,7 +29,10 @@ st.sidebar.header("🔑 API 설정")
 # )
 
 # 코드에 직접 고정된 API Key 사용
-api_key = "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"
+# api_key = "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"
+
+# 환경변수에서 API Key 읽기
+api_key = os.getenv("OPENAI_API_KEY")
 
 # 모델 선택
 model_choice = st.sidebar.selectbox(
@@ -45,7 +48,7 @@ st.markdown("---")
 
 # API 키 확인
 if not api_key:
-    st.warning("⚠️ 사이드바에서 OpenAI API Key를 입력해주세요.")
+    st.warning("⚠️ 환경변수 OPENAI_API_KEY가 설정되어 있지 않습니다.")
     st.stop()
 
 # OpenAI 클라이언트 초기화
