@@ -21,7 +21,7 @@ FIXED_ASSISTANT_ID = "asst_nPcXHjfN0G8nFcpWPxo08byE"
 DOCUMENTS_DB_PATH = "documents_db.json"
 
 # 사이드바에서 API 키 입력
-st.sidebar.header("🔑 API 설정")
+# st.sidebar.header("🔑 API 설정")
 # api_key = st.sidebar.text_input(
 #     "OpenAI API Key를 입력하세요:",
 #     type="password",
