@@ -29,7 +29,7 @@ st.sidebar.header("🔑 API 설정")
 # )
 
 # 코드에 직접 고정된 API Key 사용
-api_key = "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"
+api_key = "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"
 
 # 모델 선택
 model_choice = st.sidebar.selectbox(
